@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach() allows the mutation of the original array while .map() returns a new array.
+
 2. What is the difference between a function and a method?
+
+Methods have a “receiver,” or something to the left of the dot… In JavaScript, a method is a function that belongs to an object.
 
 3. What is closure?
 
+Closure refers to an enclosed function with references to its surrounding state.
+
 4. Describe the four rules of the 'this' keyword.
 
+  1. window binding - global scope... the value of this inside of that function will be the window object
+  2. implicit binding - Whenever a function is called by a preceding dot, the object before that dot is this.
+  3. explicit binding - Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+  4. new binding: using the new keyword constructs a new object and 'this' points
+
 5. Why do we need super() in an extended class?
+
+The super keyword is used to access and call functions on an object's parent.
 
 ## Project Set up
 
@@ -46,8 +59,8 @@ Follow these steps to set up and work on your project:
 - [X] Add TL as collaborator on Github.
 - [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
+- [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [X] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
